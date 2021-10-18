@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "Noto Sans Mono";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Noto Sans Mono"),
+         url("font.ttf") format("tff");
+  }
+header{
+    padding: 60px;
+    text-align: center;
+    background: #000000;
+}
+body{
+    background-color: #444;
+    background: linear-gradient(45deg, #000000, #000000b9), url("imgback.jpg");
+    position:relative;
+    background-size: 100% auto;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    background-color: rgb(34, 23, 25);;
+    color:rgb(119, 119, 119);
+	padding: 30px;;
+	border-radius: 5px;
+    width: 20%;
+    margin:auto;
+    text-align: center;
+    font-family: "Noto Sans Mono", "Arial", sans-serif;
+    font-weight:normal;
+}
+.logo:hover{
+    box-shadow: 15px 15px  rgb(44, 42, 42);
+    transition: 1s
+}
+.borderTop{
+    margin-top: 100px;
+}
+.textCop{
+    text-align: end;
+    font-family: "Noto Sans Mono", "Arial", sans-serif;
+    font-weight:normal;
+    font-size: 10px;
+    color:rgb(133, 133, 133);
+}
+.backColor {
+	display:table-cell;
+    position:relative;
+    width: 5%;
+    background-color: rgb(34, 23, 25);
+    color:rgb(119, 119, 119);
+	border-radius: 50px;
+	padding: 10px;
+    font-family: "Noto Sans Mono", "Arial", sans-serif;
+    font-size: 20px;
+}
+.backColor:hover{
+    box-shadow: 10px 10px  rgb(29, 29, 29);
+    transition: 0.5s
+}
+.small{
+	padding: 8px;
+    font-size: 16px;
+}
+.textForAll{
+    background-color: rgb(29, 23, 23);
+    width: 80%;
+	border-radius: 1px;
+    color: rgb(207, 207, 207);
+	padding: 50px;
+	display: block;
+    position:relative;
+    margin: auto;
+    font-family: "Noto Sans Mono", "Arial", sans-serif;
+}
+.gradient {
+	display: inline-block;
+	position: relative;    
+	line-height: 0;
+}
+.gradient:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;    
+	position: absolute;
+	top: 0;    
+	left: 0;   
+	background: transparent;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+.gradient:hover:after {
+	background-image: radial-gradient(#000000bd, rgb(0, 0, 0));
+	opacity: 1;
+}
+.call{
+	display: inline-block;
+	position: relative;  
+    width: 10%;  
+	line-height: 0;
+    opacity: 0;
+}
+.call:hover{
+	content: "Zdraov est pozvonite";
+	position: relative;    
+	line-height: 1; 
+    width: 100%;  
+    opacity: 1;
+    transition: 0.5s
+}
+.end{
+    font-size: 16px;
+}
+.end:hover{
+    color:rgb(241, 0, 0);
+    font-size: 15px;
+    transition: 0.5s
+}
